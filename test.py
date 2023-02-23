@@ -26,15 +26,11 @@ import numpy as np
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-import pandas as pd 
-
 import PIL
 import PIL.Image
 import pathlib
 
 import tensorflow as tf
-from tensorflow import keras
-from keras import layers
 
 import csv
 import matplotlib.pyplot as plt
@@ -113,7 +109,7 @@ plt.show()
 # realize prediction with a given trained model 
 def make_pred(model_path, n): 
 
-    model = keras.models.load_model(model_path)
+    model = tf.keras.models.load_model(model_path)
     pred = []
     start = 0
 

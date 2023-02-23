@@ -14,17 +14,10 @@ Comment:
 
 ## IMPORTS ## 
 
-import numpy as np
-
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-import PIL
-import PIL.Image
-import pathlib
-
 import tensorflow as tf
-from tensorflow import keras
 from keras import layers
 
 import matplotlib.pyplot as plt
